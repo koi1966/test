@@ -49,6 +49,6 @@ public class testS {
 
         String[] array = {}; // конвертируем ArrayList в массив
         array = myArrayList.toArray(new String[myArrayList.size()]);
-        System.out.println(array[3]);
+        System.out.println(array[3]) ;
 }
 }
