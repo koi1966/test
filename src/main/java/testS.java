@@ -27,6 +27,7 @@ public class testS {
         list.add("Груша");
         list.add("Слива");
         list.set(1, "Персик");
+//        list.sort();
         System.out.println (
                 "2-ой элемент массива '" + list.get(1) + "'");
         System.out.println ("Первый элемент массива '"
@@ -46,9 +47,18 @@ public class testS {
         myArrayList.add("Польша");
         myArrayList.add("Греция");
         myArrayList.add("Чехия");
-
+        myArrayList.add(1, "Paris");
         String[] array = {}; // конвертируем ArrayList в массив
         array = myArrayList.toArray(new String[myArrayList.size()]);
         System.out.println(array[3]) ;
+
+
+//  Array
+        String [] deliveryCities = {"Chicago", "New York", "Toronto", "Paris"}; // создали масив
+        String [] deliveryCities2 = new String[deliveryCities.length + 1];  // создали второй масив
+        for (int i = 0; i < deliveryCities.length; i++) {
+            deliveryCities2[i] = deliveryCities[i];  // из первого масива переписать все в второй
+        }
+        deliveryCities2[deliveryCities.length] = "London"; // Добавим одну запись в масив
 }
 }
