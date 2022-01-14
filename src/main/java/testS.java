@@ -1,7 +1,8 @@
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.temporal.ChronoField;
-import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.*;
 
 public class testS {
 
@@ -20,6 +21,27 @@ public class testS {
         System.out.println("День месяца: " + dayMonth);
         System.out.println("День недели: " + dayWeek);
 
+
+        String date = "2017-03-15";
+        DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        try {
+            Date myNewDate = dateFormat.parse(date);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        System.out.println("****************************************");
+        Calendar cal = Calendar.getInstance();
+        String month1 = new SimpleDateFormat("MMMM", new Locale("ua")).format(cal.getTime());
+
+
+
+        System.out.println("****************************************");
+        System.out.println("****************************************");
+        Calendar calendar = Calendar.getInstance() ;
+        String[] monthNames = { "Січня", "Лютого", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь" };
+        String month2 = monthNames[calendar.get(Calendar.MONTH)];
+        System.out.println(month2);
+        System.out.println("****************************************");
         ArrayList <String> list;
         list = new ArrayList <String>();
         list.add("Школа  world");

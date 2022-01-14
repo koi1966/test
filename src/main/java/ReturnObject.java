@@ -87,8 +87,6 @@ public class ReturnObject {
                 .filter(number -> number > 10)
                 .findFirst();
         System.out.println(first2); //output Optional[12]
-
-
     }
 
 }
