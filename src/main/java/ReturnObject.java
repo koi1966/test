@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 public class ReturnObject {
     int a;
@@ -29,14 +26,55 @@ public class ReturnObject {
         System.out.println("****************************************");
 
         ArrayList list = new ArrayList<>();
-        list.add(51);
-        list.add(136);
-        list.add(387);
+        list.add("Вася");
+        list.add("Петя");
+        list.add("Настя");
+        list.add("Саня");
+        list.add("Маня");
+        System.out.println("До:"+ list.toString());
+
+        Collections.sort(list);
 
         for (Object k:list) {
             System.out.println(k);
         }
         System.out.println("****************************************");
+        ArrayList arraylist = new ArrayList();
+        arraylist.add(11);
+        arraylist.add(2);
+        arraylist.add(7);
+        arraylist.add(3);
+        /* ArrayList before the sorting*/
+        System.out.println("Before Sorting:");
+        for(Object counter: arraylist){
+            System.out.println(counter);          }
+        /* Sorting of arraylist using Collections.sort*/
+        Collections.sort(arraylist);
+        /* ArrayList after sorting*/
+        System.out.println("After Sorting:");
+        for(Object counter: arraylist){
+            System.out.println(counter);
+        }
+        System.out.println("****************************************");
+        ArrayList<String> arraylis = new ArrayList<String>();
+        arraylis.add("AA");
+        arraylis.add("ZZ");
+        arraylis.add("CC");
+        arraylis.add("FF");
+        /*Unsorted List: ArrayList content before sorting*/
+        System.out.println("Before Sorting:");
+        for(Object str: arraylis){
+            System.out.println(str);
+        }
+        /* Sorting in decreasing order*/
+        Collections.sort(arraylist, Collections.reverseOrder());
+        /* Sorted List in reverse order*/
+        System.out.println("ArrayList in descending order:");
+        for(Object str: arraylist){
+            System.out.println(str);
+        }
+
+        System.out.println("*********************************************");
         boolean[] arr = new boolean[3];
 
         for( int i = 0; i< arr.length; i++){
