@@ -1,16 +1,20 @@
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
+
+import static java.util.stream.Collectors.toList;
+import static java.util.stream.Collectors.toMap;
 
 public class StreamAPI {
     public static void main(String[] args) {
 
 //        https://javarush.ru/groups/posts/2203-stream-api
 
-        List<String> list = new ArrayList<String>();
+        List<String> list = new ArrayList<>();
         list.add("One");
         list.add("Two");
         list.add("Three");
@@ -30,7 +34,20 @@ public class StreamAPI {
 
         Map<Boolean, List<String>> map1 = Stream.of(
                         "ab", "c", "def", "gh", "ijk", "l", "mnop")
+
                 .collect(Collectors.partitioningBy(s -> s.length() <= 2));
+
         map1.entrySet().forEach(System.out::println);
+
+        List<String> strings = map1.get(true);
+        System.out.println(strings);
+
+        List<String> mapStr = Stream.of(
+                        "ab", "c", "def", "gh", "ijk", "l", "mnop")
+                .filter(s -> s.length() <= 2)
+                .collect(Collectors.toList());
+        System.out.println(" вывод на  <= 2 -" + mapStr);
+
+        }
     }
-}
+
