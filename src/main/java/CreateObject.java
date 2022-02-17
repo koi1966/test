@@ -8,19 +8,17 @@ public class CreateObject {
         List<String> strings = Arrays.asList("ab", "c", "def", "gh", "ijk", "l", "mnop");
 
         List<Person> personList = new ArrayList<>();
-
+        int i = 1;
         for (String string : strings) {
             Person person = new Person();
             person.name = string;
-            person.age = 1;
+            person.age = i++;
             personList.add(person);
         }
-
         System.out.println(personList);
-
     }
 
-    static class Person{
+    static class Person {
         String name;
         int age;
 

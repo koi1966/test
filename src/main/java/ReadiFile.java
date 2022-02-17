@@ -3,22 +3,20 @@ import java.io.FileNotFoundException;
 import java.util.Arrays;
 import java.util.Scanner;
 
-import static javafx.scene.input.KeyCode.I;
-
 public class ReadiFile {
     public static void main(String[] args) throws FileNotFoundException {
         String separator = File.separator;
 //        String path = "c:" \\rsc1840\\texst.txt";
-        String path = "c:" + separator+ "rsc1840" + separator+ "texst.txt";
+        String path = "c:" + separator + "rsc1840" + separator + "texst.txt";
 
         File file = new File(path);
         Scanner scanner = new Scanner(file);
         String line = scanner.nextLine();
         String[] nmberString = line.split(" ");
         int[] numbers = new int[3];
-        int counter= 0;
+        int counter = 0;
 
-        for (String number : nmberString){
+        for (String number : nmberString) {
             numbers[counter++] = Integer.parseInt(number);
         }
         System.out.println(Arrays.toString(numbers));
@@ -26,7 +24,7 @@ public class ReadiFile {
         scanner.close();
 
         for (int number : numbers) {
-            System.out.println(Arrays.toString(numbers ));
+            System.out.println(Arrays.toString(numbers));
 
         }
 
