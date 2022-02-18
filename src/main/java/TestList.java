@@ -3,7 +3,7 @@ import java.util.List;
 
 public class TestList {
     public static void main(String[] args) {
-
+//        https://javarush.ru/groups/posts/2203-stream-api
         List<String> listFirst = new ArrayList<>();
         listFirst.add("White");
         listFirst.add("Black");
@@ -17,6 +17,5 @@ public class TestList {
         listFirst.retainAll(listSecond);
         System.out.println("listFirst" + listFirst);
         System.out.println("listSecond" + listSecond);
-
     }
 }

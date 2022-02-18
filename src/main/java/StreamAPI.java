@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.function.Function;
@@ -14,6 +15,7 @@ public class StreamAPI {
 
 //        https://javarush.ru/groups/posts/2203-stream-api
 
+
         List<String> list = new ArrayList<>();
         list.add("One");
         list.add("Two");
@@ -26,7 +28,7 @@ public class StreamAPI {
         list.add("Nine");
         list.add("Ten");
         Stream<String> stream = list.stream();
-        stream.filter(x-> x.toString().length() == 3).forEach(System.out::println);
+        stream.filter(x-> x.length() == 3).forEach(System.out::println);
 //        1 — создаём список list;
 //        2-11 — заполняем его тестовыми данными;
 //        12 — создаём обьект Stream;
@@ -50,6 +52,19 @@ public class StreamAPI {
                 .filter(s -> s.length() <= 2)
                 .collect(Collectors.toList());
         System.out.println(" вывод на  <= 2 -" + mapStr);
+
+        String[] array = {"Java", "Ruuuuussshhh"};
+        Stream<String> streamOfArray = Arrays.stream(array);
+        streamOfArray.map(s->s.split("")) //Преобразование слова в массив букв
+                .flatMap(Arrays::stream).distinct() //выравнивает каждый сгенерированный поток в один поток
+                .collect(Collectors.toList()).forEach(System.out::println);
+
+        String[] array2 = {"Java2", "Ruuuuussshhh2"};
+        Stream<String> streamOfArray2 = Arrays.stream(array2);
+        streamOfArray2.map(s->s.split("")) //Преобразование слова в массив букв
+                .map(Arrays::stream).distinct() //Сделать массив в отдельный поток
+                .collect(Collectors.toList()).forEach(System.out::println);
+
 
     }
 }
