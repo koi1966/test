@@ -8,7 +8,7 @@ import java.util.Map;
 public class MapIndString {
     public static void main(String[] args) {
 //                          2   1     1    2      2   2     2    1    1      2
-        String stString ="Ваня Петя Саша Максим Маша Ваня Маша Вова Андрей Максим";
+        String stString ="Ваня Ваня Петя Саша Максим Маша Ваня Маша Вова Андрей Максим";
         String[] str = stString.split(" ");
         Integer Imap = 1;
         Integer Jmap =1;
@@ -16,7 +16,7 @@ public class MapIndString {
         HashMap<String,Integer> heshMapp = new HashMap<>();
         for (int i = 0; i < str.length; i++) {
             heshMapp.put(str[i],Imap);
-            for (int j = 1; j < str.length; j++) {
+            for (int j = 0; j < str.length; j++) {
 
                if (str[i].equals(str[j])){
                    heshMapp.put(str[i],Imap++);
@@ -37,7 +37,7 @@ public class MapIndString {
                 if (listF.get(i).equals(listF.get(j)) && (i != j)) count++;
 
             }
-
+            System.out.println(listF.toString());
         }
     }
 }
