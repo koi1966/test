@@ -101,7 +101,7 @@ public class ReturnObject {
                 .filter(s -> s.contains("Java"))
                 .findAny();
 
-        System.out.println(java);
+        System.out.println("java" + java);
         System.out.println("****************************************");
 
 //        Найдем первое число
@@ -111,12 +111,12 @@ public class ReturnObject {
         Optional<Integer> first = numbers.stream()
                 .findFirst();
 
-        System.out.println(first); //output Optional[1]
+        System.out.println("output Optional[1]-"+first); //output Optional[1]
 
 //        Теперь найдем первое число, больше 10
-//        List<Integer> numbers1 = Arrays.asList(1, 5, 8, 10, 12, 15);
+        List<Integer> numbers1 = Arrays.asList(1, 5, 8, 10, 12, 15);
 
-        Optional<Integer> first1 = numbers.stream()
+        Optional<Integer> first1 = numbers1.stream()
                 .filter(i -> i > 10).map(i -> i + 20)
                 .findFirst();
 

@@ -33,8 +33,6 @@ public class testS {
         Calendar cal = Calendar.getInstance();
         String month1 = new SimpleDateFormat("MMMM", new Locale("ua")).format(cal.getTime());
 
-
-        System.out.println("****************************************");
         System.out.println("****************************************");
         Calendar calendar = Calendar.getInstance();
         String[] monthNames = {"Січня", "Лютого", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"};
