@@ -79,5 +79,10 @@ public class testS {
             deliveryCities2[i] = deliveryCities[i];  // из первого масива переписать все в второй
         }
         deliveryCities2[deliveryCities.length] = "London"; // Добавим одну запись в масив
-    }
+
+        Calendar calendar2 = Calendar.getInstance();
+        String[] monthNames2 = {"Січнь", "Лютий", "Березень", "Квітень", "Травень", "Липень", "Червень", "Серпень", "Вересень", "Жовтень", "Листопад", "Грудень"};
+        String month3 = monthNames2[calendar.get(Calendar.MONTH)];
+
+}
 }
