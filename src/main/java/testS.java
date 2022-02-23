@@ -2,7 +2,10 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.temporal.ChronoField;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.Locale;
 
 public class testS {
 
@@ -33,12 +36,20 @@ public class testS {
         Calendar cal = Calendar.getInstance();
         String month1 = new SimpleDateFormat("MMMM", new Locale("ua")).format(cal.getTime());
 
-        System.out.println("****************************************");
+        System.out.println("*********Calendar calendar = Calendar.getInstance();*******************************");
         Calendar calendar = Calendar.getInstance();
         String[] monthNames = {"Січня", "Лютого", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"};
         String month2 = monthNames[calendar.get(Calendar.MONTH)];
         System.out.println(month2);
         System.out.println("****************************************");
+
+        Calendar calendar2 = Calendar.getInstance();
+        String[] monthNames2 = {"Січнь", "Лютийй", "Березень", "Квітень", "Травень", "Липень", "Червень", "Серпень", "Вересень", "Жовтень", "Листопад", "Грудень"};
+        String month3 = monthNames2[calendar2.get(Calendar.MONTH)];
+        System.out.println(month3);
+
+        System.out.println("****************************************");
+
         ArrayList<String> list;
         list = new ArrayList<String>();
         list.add("Школа  world");
@@ -80,9 +91,9 @@ public class testS {
         }
         deliveryCities2[deliveryCities.length] = "London"; // Добавим одну запись в масив
 
-        Calendar calendar2 = Calendar.getInstance();
-        String[] monthNames2 = {"Січнь", "Лютий", "Березень", "Квітень", "Травень", "Липень", "Червень", "Серпень", "Вересень", "Жовтень", "Листопад", "Грудень"};
-        String month3 = monthNames2[calendar.get(Calendar.MONTH)];
-
-}
+        Calendar calendar3 = Calendar.getInstance();
+        String[] monthNames3 = {"Січнь", "Лютийй", "Березень", "Квітень", "Травень", "Липень", "Червень", "Серпень", "Вересень", "Жовтень", "Листопад", "Грудень"};
+        String month4 = monthNames3[calendar3.get(Calendar.MONTH)];
+        System.out.println(month4);
+    }
 }

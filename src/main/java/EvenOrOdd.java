@@ -8,7 +8,7 @@ public class EvenOrOdd {
         System.out.print("Enter a number: ");
         int num = reader.nextInt();
 
-        if(num % 2 == 0)
+        if (num % 2 == 0)
             System.out.println(num + " is even");
         else
             System.out.println(num + " is odd");
@@ -29,7 +29,7 @@ public class EvenOrOdd {
         int indPat;
 
         int counter = 0;
-        while ((indPat = ss.indexOf(pat,curInd)) != -1) {
+        while ((indPat = ss.indexOf(pat, curInd)) != -1) {
             counter++;
             curInd = indPat + 1;
         }

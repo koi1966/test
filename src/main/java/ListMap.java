@@ -39,10 +39,10 @@ public class ListMap {
                 "Sony Xperia Z5", "Meizu Pro 6", "Lenovo S850");
 
         List<String> filteredPhones = phones.stream()
-                .filter(s->s.length()<10)
+                .filter(s -> s.length() < 10)
                 .collect(Collectors.toList());
 
-        for(String s : filteredPhones){
+        for (String s : filteredPhones) {
             System.out.println(s);
         }
     }

@@ -21,7 +21,6 @@ public class StringS {
         String month2 = monthNames[calendar.get(Calendar.MONTH)];
 
 
-
 //        () -> log
 //        log.info("GetMapping(.rubin.week.rubin-week-view)");
 //        new String("Hello").intern() == new String("Hello").intern()
