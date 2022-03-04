@@ -12,7 +12,7 @@ public class Stream {
                 .forEach(System.out::println); //output 2 6 10 14
 
         List<Integer> allow = Arrays.asList(3, 8, 10, 11);
-        List<Integer> all = Arrays.asList(1, 5, 10, 8, 12, 15,9);
+        List<Integer> all = Arrays.asList(1, 5, 10, 8, 12, 15, 9);
 
         List<Integer> collected = allow.stream().filter(i -> all.stream().anyMatch(n -> n.equals(i))).collect(Collectors.toList());
         System.out.print("Первый - вывод всего что не проходит ..");

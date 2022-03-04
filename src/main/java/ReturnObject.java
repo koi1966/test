@@ -1,6 +1,6 @@
 import java.util.*;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
+
+import static com.sun.tools.attach.VirtualMachine.list;
 
 public class ReturnObject {
     int a;
@@ -33,7 +33,7 @@ public class ReturnObject {
         list.add("Настя");
         list.add("Саня");
         list.add("Маня");
-        System.out.println("До:" + list.toString());
+        System.out.println("До:" + list());
 
         Collections.sort(list);
 
@@ -111,56 +111,22 @@ public class ReturnObject {
         Optional<Integer> first = numbers.stream()
                 .findFirst();
 
-        System.out.println("output Optional[1]-"+first); //output Optional[1]
+        System.out.println("output Optional[1]-" + first); //output Optional[1]
 
 //        Теперь найдем первое число, больше 10
         List<Integer> numbers1 = Arrays.asList(1, 5, 8, 10, 12, 15);
 
         Optional<Integer> first1 = numbers1.stream()
-                .filter(i -> i > 10).map(i -> i + 20)
+                .filter(number -> number > 10)
                 .findFirst();
 
         System.out.println(first1); //output Optional[12]
-        System.out.println("****************************************");
-//        List<Integer> numbers = Arrays.asList(1, 5, 8, 10, 12, 15);
 
+//        List<Integer> numbers = Arrays.asList(1, 5, 8, 10, 12, 15);
         Optional<Integer> first2 = numbers.parallelStream()
                 .filter(number -> number > 10)
                 .findFirst();
         System.out.println(first2); //output Optional[12]
-
-        System.out.println("****************************************");
-        System.out.println("*************1, 3, 5, 7,8***************************");
-        List<Integer> numbers3 = Arrays.asList(1, 3, 5, 7, 8);
-
-        for (Integer i : numbers3) {
-            System.out.println(i * 2); //output 2 6 10 14
-        }
-
-        List<Integer> numbers2 = Arrays.asList(1, 3, 5, 7);
-
-        numbers2.stream()
-                .map(it -> it * 2)
-                .forEach(System.out::println); //output 2 6 10 14
-
-
-        List<Integer> allow = Arrays.asList(8, 10);
-        List<Integer> all = Arrays.asList(1, 5, 10, 12, 15);
-
-        List<Integer> collected = allow.stream().filter(i -> all.stream().anyMatch(n -> n.equals(i))).collect(Collectors.toList());
-        System.out.println(collected);
-
-        List<String> intList = Stream.of("one", "two", "three", "four")
-                .filter(e -> e.length() > 3)
-                .peek(e -> System.out.println("Filtered value: " + e))
-                .map(String::toUpperCase)
-                .peek(e -> System.out.println("Mapped value: " + e))
-                .collect(Collectors.toList());
-
-        System.out.println(intList);
-
-        List<String> strings1 = Arrays.asList("43213", "312");
-
     }
 
 }
