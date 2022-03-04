@@ -16,6 +16,7 @@ public class CreateObject {
             personList.add(person);
         }
         System.out.println(personList);
+
     }
 
     static class Person {
