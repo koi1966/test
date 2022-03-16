@@ -1,6 +1,5 @@
 import java.util.*;
 
-import static com.sun.tools.attach.VirtualMachine.list;
 
 public class ReturnObject {
     int a;
@@ -33,7 +32,7 @@ public class ReturnObject {
         list.add("Настя");
         list.add("Саня");
         list.add("Маня");
-        System.out.println("До:" + list());
+        System.out.println("До:" + list);
 
         Collections.sort(list);
 
