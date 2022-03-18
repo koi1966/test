@@ -1,6 +1,6 @@
 public class String_o {
     public static void main(String args[]) {
-        String Str = new String("Добро пожаловать на ProgLang.su");
+        String Str = new String("Доброоооо пожаловать на ProgLang.su");
         String SubStr1 = new String("Prog");
         String SubStr2 = new String("Srog");
 
@@ -14,5 +14,14 @@ public class String_o {
         System.out.println(Str.indexOf(SubStr1, 21));
         System.out.print("Найденный индекс: ");
         System.out.println(Str.indexOf(SubStr2));
+
+        int a = 0;
+        int b ;
+        for (int i = 0; i < Str.length(); i++) {
+            if ((b = Str.indexOf('о', i)) != -1) {
+                i = b;
+              a++;
+           }
+        } System.out.println(a);
     }
 }

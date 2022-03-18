@@ -16,5 +16,14 @@ public class Stream_2 {
                 .anyMatch(number -> number % 2 == 0); // есть ли в Stream-e четное число
 
         System.out.println(match); //output true
+        System.out.println("===========================");
+
+        List<List<Integer>> list = Arrays.asList(
+                Arrays.asList(1,2,3),
+                Arrays.asList(4,5,6)
+        );
+        list.stream()
+                .flatMap(List::stream)
+                .forEach(System.out::println);
     }
 }
