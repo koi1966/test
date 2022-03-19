@@ -41,7 +41,7 @@ public class Stream {
         List<Integer> intsList = ints.map(x -> x * x)
                 .collect(ArrayList<Integer>::new, ArrayList::add, ArrayList::addAll);
 
-        System.out.println(intsList);
+        System.out.println("=====" + intsList);
 
 //        2. Collect to List + filter Отфильтруем список чисел по четност
         List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
@@ -62,7 +62,7 @@ public class Stream {
 
         System.out.println("Новый -Теперь мы можем использовать методы filter и collect -" + evenNumbers3.toString()); //output [2, 4, 6, 8, 10]
 
-
+        Arrays.s
         List<Integer> numbers4 = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
         List<Integer> evenNumbers4 = numbers4.stream()
                 .filter(i -> i % 2 == 0)
@@ -124,26 +124,26 @@ public class Stream {
                 .collect(Collectors.toCollection(() -> new LinkedList<>()));
         System.out.println("queue0 -" + queue0); //output [Jaime, Daenerys, Tyrion]
 
-
         List<String> names1 = Arrays.asList("Jaime", "Daenerys", "", "Tyrion", "");
         Queue<String> queue1 = names.stream()
                 .filter(n -> !n.isEmpty())
                 .collect(Collectors.toCollection(() -> new LinkedList<>()));
         System.out.println("queue1 -" + queue1); //output [Jaime, Daenerys, Tyrion]
 
-//        Метод toCollection принимает лямбда-выражение типа поставщик (Supplier), которое должно вернуть коллекцию, в которую мы хотим сохранить данные. В данном случае мы вернули LinkedList.
+//        Метод toCollection принимает лямбда-выражение типа поставщик (Supplier), которое должно вернуть коллекцию,
+//        в которую мы хотим сохранить данные. В данном случае мы вернули LinkedList.
 
 //        Пример так же можно улучшить с помощю ссылки на метод, изменив
 
         Collectors.toCollection(() -> new LinkedList<>());
 
-        Collectors.toCollection(() -> new LinkedList<>());
-
 //        На                  Java
         Collectors.toCollection(LinkedList::new);
-
-        Collectors.toCollection(LinkedList::new);
 //        Финальный вариант
+
+
+
+
 
 
         List<String> names44 = Arrays.asList("Jaime", "Daenerys", "", "Tyrion", "");
@@ -152,12 +152,6 @@ public class Stream {
                 .collect(Collectors.toCollection(LinkedList::new));
         System.out.println("queue44 -" + queue44); //output [Jaime, Daenerys, Tyrion]
 
-
-        List<String> names55 = Arrays.asList("Jaime", "Daenerys", "", "Tyrion", "");
-        Queue<String> queue55 = names55.stream()
-                .filter(n -> !n.isEmpty())
-                .collect(Collectors.toCollection(LinkedList::new));
-        System.out.println("queue55 -" + queue55); //output [Jaime, Daenerys, Tyrion]
 
     }
 }
