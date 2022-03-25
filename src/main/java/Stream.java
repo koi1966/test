@@ -62,7 +62,6 @@ public class Stream {
 
         System.out.println("Новый -Теперь мы можем использовать методы filter и collect -" + evenNumbers3.toString()); //output [2, 4, 6, 8, 10]
 
-        Arrays.s
         List<Integer> numbers4 = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
         List<Integer> evenNumbers4 = numbers4.stream()
                 .filter(i -> i % 2 == 0)

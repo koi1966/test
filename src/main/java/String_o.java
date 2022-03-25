@@ -23,5 +23,13 @@ public class String_o {
               a++;
            }
         } System.out.println(a);
+
+
+        byte[] aa={49,50,51,52,53,54,55};
+        String bb=new String(aa);
+        System.out.println(bb);
+
+        String c = new String(aa,2,4);
+        System.out.println(c);
     }
 }
