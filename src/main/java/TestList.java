@@ -17,5 +17,8 @@ public class TestList {
         listFirst.retainAll(listSecond);
         System.out.println("listFirst" + listFirst);
         System.out.println("listSecond" + listSecond);
+
+        ArrayList list1 =new ArrayList<>();
     }
+
 }
