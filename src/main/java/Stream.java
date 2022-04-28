@@ -15,14 +15,15 @@ public class Stream {
         List<Integer> all = Arrays.asList(1, 5, 10, 8, 12, 15, 9);
 
         List<Integer> collected = allow.stream().filter(i -> all.stream().anyMatch(n -> n.equals(i))).collect(Collectors.toList());
-        System.out.print("Первый - вывод всего что не проходит ..");
+        System.out.print("Вывод совпадений allow и all ..");
         System.out.println(collected);
 
         ArrayList listOne = new ArrayList(Arrays.asList(1, 2, 3, 4, 5));
         ArrayList listTwo = new ArrayList(Arrays.asList(1, 2, 4, 5, 6, 7));
 
         listTwo.removeAll(listOne);
-        System.out.println("Missing items from listOne " + listTwo);
+        System.out.println("Есть в listTwo, но нет в listOne " + listTwo);
+
 
         List<String> intList = java.util.stream.Stream.of("one", "two", "three", "four")
                 .filter(e -> e.length() > 3)
@@ -30,8 +31,7 @@ public class Stream {
                 .map(String::toUpperCase)
                 .peek(e -> System.out.println("Mapped value: " + e))
                 .collect(Collectors.toList());
-
-        System.out.println(intList);
+        System.out.println(intList); // больше 3-х символов
 
         List<String> strings1 = Arrays.asList("43213", "312");
 
@@ -104,7 +104,6 @@ public class Stream {
         }
         System.out.println("queue -" + queue); //output [Jaime, Daenerys, Tyrion]
 
-
         List<String> names9 = Arrays.asList("Jaime", "Daenerys", "", "Tyrion", "");
         Queue<String> queue9 = new LinkedList<>();
         for (String name : names9) {
@@ -123,15 +122,8 @@ public class Stream {
                 .collect(Collectors.toCollection(() -> new LinkedList<>()));
         System.out.println("queue0 -" + queue0); //output [Jaime, Daenerys, Tyrion]
 
-        List<String> names1 = Arrays.asList("Jaime", "Daenerys", "", "Tyrion", "");
-        Queue<String> queue1 = names.stream()
-                .filter(n -> !n.isEmpty())
-                .collect(Collectors.toCollection(() -> new LinkedList<>()));
-        System.out.println("queue1 -" + queue1); //output [Jaime, Daenerys, Tyrion]
-
 //        Метод toCollection принимает лямбда-выражение типа поставщик (Supplier), которое должно вернуть коллекцию,
-//        в которую мы хотим сохранить данные. В данном случае мы вернули LinkedList.
-
+//            в которую мы хотим сохранить данные. В данном случае мы вернули LinkedList.
 //        Пример так же можно улучшить с помощю ссылки на метод, изменив
 
         Collectors.toCollection(() -> new LinkedList<>());
@@ -140,17 +132,11 @@ public class Stream {
         Collectors.toCollection(LinkedList::new);
 //        Финальный вариант
 
-
-
-
-
-
         List<String> names44 = Arrays.asList("Jaime", "Daenerys", "", "Tyrion", "");
         Queue<String> queue44 = names.stream()
                 .filter(n -> !n.isEmpty())
                 .collect(Collectors.toCollection(LinkedList::new));
         System.out.println("queue44 -" + queue44); //output [Jaime, Daenerys, Tyrion]
-
 
     }
 }
