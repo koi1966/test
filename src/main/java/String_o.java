@@ -22,7 +22,7 @@ public class String_o {
                 i = b;
               a++;
            }
-        } System.out.println(a);
+        } System.out.println("Букв - о переменной ( Str ) =" + a);
 
 
         byte[] aa={49,50,51,52,53,54,55};

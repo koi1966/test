@@ -20,7 +20,10 @@ public class StringS {
         String[] monthNames = {"Січнь", "Лютий", "Березень", "Квітень", "Травень", "Липень", "Червень", "Серпень", "Вересень", "Жовтень", "Листопад", "Грудень"};
         String month2 = monthNames[calendar.get(Calendar.MONTH)];
 
-
+        int Integer = 24;
+//        char String = "I";
+        System.out.print(Integer);
+//        System.out.print(String);
 //        () -> log
 //        log.info("GetMapping(.rubin.week.rubin-week-view)");
 //        new String("Hello").intern() == new String("Hello").intern()
@@ -28,5 +31,6 @@ public class StringS {
 
     private static void accept(int x) {
         System.out.println(x);
+
     }
 }
