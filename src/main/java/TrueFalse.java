@@ -14,5 +14,20 @@ public class TrueFalse {
 //        int[] ar3 = new int[2147483648];
         int num1 = 0xFace   ;
         int Integer = 99;
-    }
+
+//        try{
+//
+//            System.out.println("try");
+//            int 12 = 22;
+//        }
+//        catch(arthemeticexception e){
+//            System.out..println(“catch1”)
+//        }
+//        catch(exception e){
+//            System.out..println(“catch2”)
+//        }
+//        finally{
+//            System.out..println(“finally”)
+//            {
+  }
 }

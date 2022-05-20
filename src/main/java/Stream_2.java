@@ -20,7 +20,7 @@ public class Stream_2 {
 
         List<List<Integer>> list = Arrays.asList(
                 Arrays.asList(1,2,3),
-                Arrays.asList(4,5,6)
+                Arrays.asList(4,5,6,7)
         );
         list.stream()
                 .flatMap(List::stream)

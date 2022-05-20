@@ -115,7 +115,6 @@ public class Stream {
 
 //        Чтобы проделать то же самое с помощью Stream API необходимо воспользоваться другим методом класса Collections - toCollection
 
-
         List<String> names0 = Arrays.asList("Jaime", "Daenerys", "", "Tyrion", "");
         Queue<String> queue0 = names.stream()
                 .filter(n -> !n.isEmpty())

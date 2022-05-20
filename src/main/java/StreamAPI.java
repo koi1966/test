@@ -21,8 +21,19 @@ public class StreamAPI {
         list.add("Eight");
         list.add("Nine");
         list.add("Ten");
-        Stream<String> stream = list.stream();
-        stream.filter(x -> x.length() == 3).forEach(System.out::println);
+
+        Stream<String> streamList = list.stream();
+
+        List<String> collected = streamList.filter(x -> x.length() != 3).collect(Collectors.toList());
+        System.out.print("Вывод тех у кого 3 символа ..");
+        System.out.println(collected);
+
+        streamList.filter(x -> x.length() == 3).forEach(System.out::println);
+
+//        List<String> list = Arrays.stream(args)
+//                .filter(s -> s.length() <= 2)
+//                .collect(Collectors.toList());
+
 //        19 — создаём список list;
 //        20-29 — заполняем его тестовыми данными;
 //        30 — создаём обьект Stream;
@@ -39,7 +50,7 @@ public class StreamAPI {
         map1.entrySet().forEach(System.out::println);
 
         List<String> strings = map1.get(true);
-        System.out.println(strings);
+        System.out.println("strings -" + strings);
 
         List<String> mapStr = Stream.of(
                         "ab", "c", "def", "gh", "ijk", "l", "mnop")
@@ -58,8 +69,6 @@ public class StreamAPI {
         streamOfArray2.map(s -> s.split("")) //Преобразование слова в массив букв
                 .map(Arrays::stream).distinct() //Сделать массив в отдельный поток
                 .collect(Collectors.toList()).forEach(System.out::println);
-
-
     }
 }
 
