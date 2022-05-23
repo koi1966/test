@@ -1,16 +1,12 @@
-import java.util.Scanner;
-
 public class Main {
+
     public static void main(String[] args) {
         System.out.println("Кофе-машина");
 
-        Scanner in = new Scanner(System.in);
-        System.out.print("Cкільки у Вас грошей ? .. ");
-        int moneyAmount = in.nextInt();
-//        int moneyAmount = 120;
+        int moneyAmount = 120;
 
         int[] drinkPrices = {200, 100, 50, 40};
-        String[] drinkNames = {"капучіно", "эспрессо", "вода"};
+        String[] drinkNames = {"капучино", "эспрессо", "воду"};
 
         boolean canBuyAnything = false;
 
@@ -18,7 +14,7 @@ public class Main {
 
         for (int i = 0; i < length; i++) {
             if (moneyAmount >= drinkPrices[i]) {
-                System.out.println("За ці гроші тільки " +
+                System.out.println("Вы можете купить " +
                         drinkNames[i]);
                 canBuyAnything = true;
             }
