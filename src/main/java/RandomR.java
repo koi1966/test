@@ -17,6 +17,11 @@ public class RandomR {
         String arrayToString = Arrays.toString(values);
         System.out.println(arrayToString);
 
+        int x = 0;
+        x = (-5) + (+15); //Скобки для наглядности, можно и без них
+        System.out.println("x = " + x);
+        int y = -x;
+        System.out.println("y = " + y);
     }
 
 
