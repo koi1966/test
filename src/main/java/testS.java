@@ -73,7 +73,7 @@ public class testS {
         System.out.println(list.contains("Груша") + "");
 //        Создание массива из элементов ArrayList, метод toArray
         ArrayList<String> myArrayList = new ArrayList<String>();
-        myArrayList.add("Россия");
+        myArrayList.add("Київ");
         myArrayList.add("Польша");
         myArrayList.add("Греция");
         myArrayList.add("Чехия");
