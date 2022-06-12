@@ -16,11 +16,20 @@ private String name;
     public String getName() {
         return name;
     }
+//    @Override
+//    public boolean equals(Object obj){
+//        System.out.println("Equalse is callc: " + this + ": " + obj);
+//        MyClass other = (MyClass) obj;
+//        return id.equals(other.id) && name.equals(other.name);
+//    }
+
+
     @Override
-    public boolean equals(Object obj){
-        System.out.println("Equalse is callc: " + this + ": " + obj);
-        MyClass other = (MyClass) obj;
-        return id.equals(other.id) && name.equals(other.name);
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        MyClass myClass = (MyClass) o;
+        return id.equals(myClass.id) && name.equals(myClass.name);
     }
 
     public int hashCode(){

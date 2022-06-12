@@ -1,13 +1,20 @@
 import java.io.DataInputStream;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
 import java.util.Scanner;
 
 public class FleRead {
-    public static void main(String[] args) throws Exception {
-        DataInputStream dis = new DataInputStream(new FileInputStream("file.txt"));
+    public static void main(String[] args) throws IOException {
+        DataInputStream dis = null;
+        try {
+            dis = new DataInputStream(new FileInputStream("file.txt"));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
         byte[] buffer = new byte[512];
         while (dis.available() !=0) {
             int count = dis.read(buffer);
