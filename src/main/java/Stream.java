@@ -17,13 +17,12 @@ public class Stream {
         List<Integer> collected = allow.stream().filter(i -> all.stream().anyMatch(n -> n.equals(i))).collect(Collectors.toList());
         System.out.print("Вывод совпадений allow и all ..");
         System.out.println(collected);
-
+        System.out.println("+++++++++++++++++++++++++++++++++++");
         ArrayList listOne = new ArrayList(Arrays.asList(1, 2, 3, 4, 5));
         ArrayList listTwo = new ArrayList(Arrays.asList(1, 2, 4, 5, 6, 7));
 
         listTwo.removeAll(listOne);
         System.out.println("Есть в listTwo, но нет в listOne " + listTwo);
-
 
         List<String> intList = java.util.stream.Stream.of("one", "two", "three", "four")
                 .filter(e -> e.length() > 3)
@@ -136,6 +135,10 @@ public class Stream {
                 .filter(n -> !n.isEmpty())
                 .collect(Collectors.toCollection(LinkedList::new));
         System.out.println("queue44 -" + queue44); //output [Jaime, Daenerys, Tyrion]
+
+        java.util.stream.Stream.of("10", "11")
+                .map(x -> Integer.parseInt(x, 18))
+                .forEach(System.out::println);
 
     }
 }
