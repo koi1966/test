@@ -1,3 +1,5 @@
+package Map;
+
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -20,6 +22,7 @@ public class ListMap {
                         Integer::sum));
 // Выводим значение по ключу
         System.out.println("Испания: " + frequency.get("Испания")); // Испания: 3
+//        frequency.values().
 
 // Обходим карту и выводим содержимое
         frequency.forEach((k, v) -> System.out.println(k + ": " + v));

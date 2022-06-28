@@ -1,3 +1,5 @@
+package Stream;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -25,6 +27,7 @@ public class StreamAPI {
         Stream<String> streamList = list.stream();
 
         List<String> collected = streamList.filter(x -> x.length() != 3).collect(Collectors.toList());
+
         System.out.print("Вывод тех у кого 3 символа ..");
         System.out.println(collected);
 

@@ -1,8 +1,11 @@
+package Stream;
+
+import java.math.BigDecimal;
 import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-public class Stream {
+public class Stream1 {
 
     public static void main(String[] args) {
         List<Integer> numbers2 = Arrays.asList(1, 3, 5, 7);
@@ -140,5 +143,10 @@ public class Stream {
                 .map(x -> Integer.parseInt(x, 18))
                 .forEach(System.out::println);
 
+        System.out.println("result");
+        BigDecimal result = new BigDecimal(4.4).add(new BigDecimal(4.4));
+        System.out.println(result);
+        BigDecimal result2 = new BigDecimal(4.4);
+        System.out.println(result2);
     }
 }
