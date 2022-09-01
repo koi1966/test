@@ -1,3 +1,5 @@
+package Lists;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -18,7 +20,11 @@ public class TestList {
         System.out.println("listFirst" + listFirst);
         System.out.println("listSecond" + listSecond);
 
-        ArrayList list1 =new ArrayList<>();
+        List<String> a = new ArrayList<>();
+        a.add("c");
+        List<String> b = a.subList(0,1);
+        a.add("c");
+//        System.out.println(b.size());
     }
 
 }
