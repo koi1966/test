@@ -3,7 +3,7 @@ Postman collection
 postman folder in root project directory
 Run
 mvn clean install
-java -jar target/dropwizard-one-to-many-poc-1.0.jar server configuration.yml
+java -jar target/dropwizard-one-to-many-poc-1.0.jar serveron cfiguration.yml
 Queries
 Index :
 curl -X GET http://localhost:8080/index | json_pp
