@@ -3,7 +3,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 
 public class FindFile {
-    private static final Path DIRECTORY = Paths.get("c:/rsc1840");
+    private static final Path DIRECTORY = Paths.get("c://rsc1840");
     private static final String MASK = "a";
 
     public static void main(String[] args) throws IOException {

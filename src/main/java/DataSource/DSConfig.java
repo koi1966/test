@@ -1,6 +1,6 @@
 package DataSource;
 
-@Configuration
+//@Configuration
 public class DSConfig {
 
 

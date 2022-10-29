@@ -14,7 +14,7 @@ public class Stream_2 {
                 .distinct()   //Stream distinct() для удаления дубликатов
                 .forEach(System.out::println); //output a b c d
 //        List<String> collected = streamList.filter(x -> x.length() != 3).collect(Collectors.toList());
-        List<String> collected = strings.stream().distinct().collect(Collectors.toList());
+        List<String> collected = strings.stream().distinct().toList();
         System.out.println( "вывод -удалениe дубликатов собрали в колекцию"+
                 collected
         );
