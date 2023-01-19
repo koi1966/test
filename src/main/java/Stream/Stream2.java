@@ -6,7 +6,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 
-public class Stream_2 {
+public class Stream2 {
     public static void main(String[] args) {
         List<String> strings = Arrays.asList("a", "b", "c", "d", "a", "b");
         System.out.println("удалениe дубликатов.. ");
