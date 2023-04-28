@@ -31,6 +31,5 @@ public class StringS {
 
     private static void accept(int x) {
         System.out.println(x);
-
     }
 }

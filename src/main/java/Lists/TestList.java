@@ -25,6 +25,8 @@ public class TestList {
         List<String> b = a.subList(0,1);
         a.add("c");
 //        System.out.println(b.size());
+
+
     }
 
 }

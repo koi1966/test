@@ -15,6 +15,8 @@ public class FleRead {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
+        System.out.println("");
+        System.out.println("--DataInputStream dis--");
         byte[] buffer = new byte[512];
         while (dis.available() !=0) {
             int count = dis.read(buffer);
@@ -22,7 +24,7 @@ public class FleRead {
                 System.out.println(new String(buffer));
             }
         }
-
+        System.out.println(" ==Scanner scanner = new Scanner(new FileInputStream(file.txt))==");
         Scanner scanner = new Scanner(new FileInputStream("file.txt"));
         while (scanner.hasNextLine()) {
             System.out.println(scanner.nextLine());

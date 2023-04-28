@@ -2,6 +2,7 @@ public class Sorted {
     public static void main(String[] params) {
         int[] array = new int[] {64, 42, 73, 41, 32, 53, 16, 24, 57, 42, 74, 55, 36};
         arraySort(array);
+
         System.out.println(arrayToString(array));
     }
 
