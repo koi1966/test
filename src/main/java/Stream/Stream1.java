@@ -9,11 +9,11 @@ public class Stream1 {
 
     public static void main(String[] args) {
         List<Integer> numbers2 = Arrays.asList(1, 3, 5, 7);
-
+        System.out.println("+++++++++++++++++++++++++++++++++++");
         numbers2.stream()
                 .map(it -> it * 2)
                 .forEach(System.out::println); //output 2 6 10 14
-
+        System.out.println("+++++++++++++++++++++++++++++++++++");
         List<Integer> allow = Arrays.asList(3, 8, 10, 11);
         List<Integer> all = Arrays.asList(1, 5, 10, 8, 12, 15, 9);
 

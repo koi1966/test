@@ -9,12 +9,13 @@ public class Lamda {
         int[] primitive = integ.stream()
                 .mapToInt(Integer::intValue)
                 .toArray();
+        System.out.println("Arrays.toString(primitive)");
         System.out.println(Arrays.toString(primitive));
-
+        System.out.println("________");
         List<String> list = Arrays.asList(
                 "Франция", "Германия", "Монако", "Испания", "Италия",
                 "Австрия", "Испания", "Монако", "Грузия", "Монако",
-                "Испания", "Италия", "Монако", "Сингапур", "Армения");
+                "Испания", "Италия", "Україна","Монако", "Сингапур", "Армения");
         System.out.println(list);
         Collections.sort(list);
         System.out.println("Sorted List : "+list);

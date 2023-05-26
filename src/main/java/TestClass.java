@@ -1,5 +1,6 @@
 class OuterClass {
     private static String secret = "secret string";
+
     //Объявление вложенного класса
     public static class InnerStaticClass {
         static void printString(String str) {
@@ -10,13 +11,14 @@ class OuterClass {
             StringBuilder sb = new StringBuilder(str);
             System.out.println(sb.reverse());
         }
-        static void printSecret(){
+
+        static void printSecret() {
             System.out.println(secret);
         }
     }
 }
 
-public class TestClass{
+public class TestClass {
     public static void main(String[] args) {
         String string = "Мама мыла раму";
 //Вызов методов вложенного класса

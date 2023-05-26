@@ -16,16 +16,17 @@ public class Stream3 {
         strings.stream()
                 .distinct() //Stream distinct() для удаления дубликатов
                 .forEach(System.out::println);
-
+        System.out.println("=============" );
 
         strings.stream().distinct().collect(Collectors.toList());
         System.out.println(strings);
+        System.out.println("=============" );
 
 //        ArrayList<String>  id_ = new ArrayList<String>();
         ArrayList<String> listWithoutDuplicates =
                 (ArrayList<String>) strings.stream().distinct().collect(Collectors.toList());
         System.out.println("listWithoutDuplicates (без дубликатов): -" + listWithoutDuplicates);
-
+        System.out.println("=============" );
 //        Этот метод существует в основном для поддержки отладки, когда вы хотите видеть элементы, когда они проходят через определенную точку в конвейере:
 
         Stream.of("one", "two", "three", "four")
@@ -34,6 +35,7 @@ public class Stream3 {
                 .map(String::toUpperCase)
                 .peek(e -> System.out.println("Mapped value: " + e))
                 .collect(Collectors.toList());
+        System.out.println("=============" );
     }
 
 }
