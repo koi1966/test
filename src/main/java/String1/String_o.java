@@ -1,3 +1,5 @@
+package String1;
+
 public class String_o {
     public static void main(String args[]) {
         String Str = new String("Доброоооо пожаловать на ProgLang.su");
