@@ -87,6 +87,16 @@ public class StreamAPI {
                 .map(Arrays::stream).distinct() //Сделать массив в отдельный поток
                 .collect(Collectors.toList()).forEach(System.out::println);
         System.out.println("=============" );
+
+        Double d = 10.0;
+
+        Double d1 = d.valueOf(d);
+        Double d2 = d.doubleValue();
+        System.out.println("d -"+ d + ",  d1 -"+ d1 + ",  d2 -"+ d2);
+        System.out.println(d == d1);
+        System.out.println(d == d2);
+        System.out.println(d1.equals(d2));
+
     }
 }
 
