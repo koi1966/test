@@ -13,7 +13,7 @@ public class MainIteration {
         Integer[] array = new Integer[] {64, 42, 73, 41, 32, 53, 16, 24, 57, 42, 74, 55, 36};
 
         ArrayList<Integer> list = new ArrayList<>();
-list.add(array);
+//list.add(array);
         Collections.addAll(list, array);
 
         for (int i = 0; i < list.size(); i++) {

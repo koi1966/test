@@ -11,5 +11,15 @@ public class Intege {
         System.out.println(i3 ==i4);
         System.out.println(i1.equals(i2));
         System.out.println(i3.equals(i4));
+        System.out.println("========================");
+
+
+        // безконечный цыкл
+        int start = Integer.MAX_VALUE -1;
+
+        for (int i = start; i<= start +1; i++)
+        {
+            System.out.println(i);
+        }
     }
 }
