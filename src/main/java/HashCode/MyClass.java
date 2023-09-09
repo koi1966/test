@@ -5,8 +5,8 @@ private Long id;
 private String name;
 
     public MyClass(Long id, String name) {
-        this.id = id;
-        this.name = name;
+        this.setId(id);
+        this.setName(name);
     }
 
     public Long getId() {
@@ -29,19 +29,27 @@ private String name;
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         MyClass myClass = (MyClass) o;
-        return id.equals(myClass.id) && name.equals(myClass.name);
+        return getId().equals(myClass.getId()) && getName().equals(myClass.getName());
     }
 
     public int hashCode(){
         System.out.println("HashCode is callc: " + this);
-        return id.intValue();
+        return getId().intValue();
     }
 
     @Override
     public String toString() {
         return "MyClass{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
+                "id=" + getId() +
+                ", name='" + getName() + '\'' +
                 '}';
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }
