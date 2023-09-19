@@ -2,7 +2,7 @@ public class TesstS {
 
     public class TestS {
 
-        class ClassA{
+        static class ClassA{
             int x = 1;
 
             public void printX()
@@ -14,7 +14,7 @@ public class TesstS {
             }
         }
 
-        class ClassB extends ClassA {
+        static class ClassB extends ClassA {
             int x=2;
 
             public int getX(){
