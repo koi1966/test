@@ -1,6 +1,6 @@
 package String1;
 
-public class main {
+public class mainN {
 
     public static void main(String[] args) {
         StringInt stringInt = new StringInt();
@@ -22,6 +22,7 @@ public class main {
         System.out.println(a1++);
         System.out.println(++b1);
         System.out.println(++b1);
+
 
     }
 }

@@ -26,6 +26,7 @@ private String name;
 
     @Override
     public boolean equals(Object o) {
+//        Throwable
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         MyClass myClass = (MyClass) o;
