@@ -14,5 +14,14 @@ public class main {
         System.out.println(a + ' ' );
         System.out.println( ' ' + b);
 
+        System.out.println("================");
+        int a1 = 10;
+        int b1 = a1;
+        a1 = 20;
+        System.out.println(a1++ + ++b1);
+        System.out.println(a1++);
+        System.out.println(++b1);
+        System.out.println(++b1);
+
     }
 }
