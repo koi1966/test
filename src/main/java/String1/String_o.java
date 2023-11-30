@@ -7,9 +7,9 @@ public class String_o {
         String SubStr2 = new String("Srog");
 
         System.out.print("Найденный индекс: ");
-        System.out.println(Str.indexOf('о'));  // первого вхождения символа
+        System.out.println(Str.indexOf("о"));  // первого вхождения символа
         System.out.print("Найденный индекс: ");
-        System.out.println(Str.indexOf('о', 5)); // первого вхождения символа с 6-го символа
+        System.out.println(Str.indexOf("о", 5)); // первого вхождения символа с 6-го символа
         System.out.print("Найденный индекс: ");
         System.out.println(Str.indexOf(SubStr1)); // находится на 20-ом символе
         System.out.print("Найденный индекс: ");
@@ -20,7 +20,7 @@ public class String_o {
         int a = 0;
         int b ;
         for (int i = 0; i < Str.length(); i++) {
-            if ((b = Str.indexOf('о', i)) != -1) {
+            if ((b = Str.indexOf("о", i)) != -1) {
                 i = b;
               a++;
            }
