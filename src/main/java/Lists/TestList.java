@@ -11,6 +11,7 @@ public class TestList {
         listFirst.add("White");
         listFirst.add("Black");
         listFirst.add("Red");
+
 //        и вторая:
         List<String> listSecond = new ArrayList<>();
 
