@@ -1,7 +1,7 @@
 package String.String1;
 
 public class String_o {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         String Str = new String("Доброоооо пожаловать на ProgLang.su");
         String SubStr1 = new String("Prog");
         String SubStr2 = new String("Srog");
