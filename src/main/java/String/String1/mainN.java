@@ -6,13 +6,12 @@ public class mainN {
         StringInt stringInt = new StringInt();
         System.out.println(stringInt.calculateFromString("2+3*2"));
 
-
         System.out.println("================");
         int a = 10;
         int b = 5;
         System.out.println(a + ' ' + b);
-        System.out.println(a + ' ' );
-        System.out.println( ' ' + b);
+        System.out.println(a + ' ');
+        System.out.println(' ' + b);
 
         System.out.println("================");
         int a1 = 10;
@@ -22,7 +21,5 @@ public class mainN {
 //        System.out.println(a1++);
         System.out.println(++b1);
         System.out.println(++b1);
-
-
     }
 }

@@ -26,7 +26,6 @@ public class String_o {
            }
         } System.out.println("Букв - о переменной ( Str ) =" + a);
 
-
         byte[] aa={49,50,51,52,53,54,55};
         String bb=new String(aa);
         System.out.println(bb);
