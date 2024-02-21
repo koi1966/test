@@ -17,10 +17,6 @@ public class String_o {
         System.out.print("Найденный индекс: ");
         System.out.println(Str.indexOf(SubStr2));
 
-
-
-
-
         int a = 0;
         int b ;
         for (int i = 0; i < Str.length(); i++) {
