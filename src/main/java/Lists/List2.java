@@ -45,7 +45,7 @@ class JavaListSubListExample2 {
         }
         Collections.sort(list, new SortById());
         System.out.println();
-        System.out.println(" Sorted List : ");
+        System.out.println(" Masiv.Sorted List : ");
         int i=1;
         for (Employee val : list) {
             System.out.println(i++ +". "+val);

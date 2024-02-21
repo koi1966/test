@@ -70,7 +70,7 @@ public class ReturnObject {
         }
         /* Sorting in decreasing order*/
         Collections.sort(arraylist, Collections.reverseOrder());
-        /* Sorted List in reverse order*/
+        /* Masiv.Sorted List in reverse order*/
         System.out.println("ArrayList in descending order:");
         for (Object str : arraylist) {
             System.out.println(str);

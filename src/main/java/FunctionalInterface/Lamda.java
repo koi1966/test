@@ -1,3 +1,5 @@
+package FunctionalInterface;
+
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
@@ -18,7 +20,7 @@ public class Lamda {
                 "Испания", "Италия", "Україна","Монако", "Сингапур", "Армения");
         System.out.println(list);
         Collections.sort(list);
-        System.out.println("Sorted List : "+list);
+        System.out.println("Masiv.Sorted List : "+list);
         System.out.println(list);
 
 //    integers.forEach(item -> System.out.println(item));

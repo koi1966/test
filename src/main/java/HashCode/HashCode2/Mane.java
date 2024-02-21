@@ -1,6 +1,4 @@
-package HashCode2;
-
-import java.util.Objects;
+package HashCode.HashCode2;
 
 public class Mane {
 
