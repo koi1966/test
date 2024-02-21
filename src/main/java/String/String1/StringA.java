@@ -1,4 +1,4 @@
-package String1;
+package String.String1;
 
 public class StringA {
     public static void main(String[] args) {

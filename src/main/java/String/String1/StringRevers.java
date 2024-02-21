@@ -1,4 +1,4 @@
-package String1;
+package String.String1;
 public class StringRevers {
 
     public static String reverseWord(String word) {

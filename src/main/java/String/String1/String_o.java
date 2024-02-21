@@ -1,4 +1,4 @@
-package String1;
+package String.String1;
 
 public class String_o {
     public static void main(String args[]) {
@@ -16,6 +16,10 @@ public class String_o {
         System.out.println(Str.indexOf(SubStr1, 21));
         System.out.print("Найденный индекс: ");
         System.out.println(Str.indexOf(SubStr2));
+
+
+
+
 
         int a = 0;
         int b ;

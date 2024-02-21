@@ -1,4 +1,4 @@
-package String2;
+package String.String2;
 
 public class replaceAll {
     public static void main(String[] args) {
