@@ -3,3 +3,13 @@ line 2
 line 3
 line 4
 line 5
+
+https://www.youtube.com/watch?v=bLzuTIGXVLg
+
+Java Core
+3 принціпа ООП и как она работают
+методі ООП
+Collection framework - основні інтерфейси И ИХ РЕАЛІЗАЦІЯ
+Многопоточност .. !!
+SQL
+Стеки фреймворка (технологий)
