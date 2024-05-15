@@ -16,13 +16,19 @@ public class MainIteration {
 //list.add(array);
         Collections.addAll(list, array);
 
-        for (int i = 0; i < list.size(); i++) {
-            System.out.println(list.get(i));
+//        for (int i = 0; i < list.size(); i++) {
+//            System.out.println(list.get(i));
+//        }  - realizacija to chto vnizy
+        for (Integer value : list) {
+            System.out.println(value);
         }
 
-        Iterator<Integer> iterator = list.iterator();
-        while (iterator.hasNext()) {
-            System.out.println(iterator.next());
+//        Iterator<Integer> iterator = list.iterator();
+//        while (iterator.hasNext()) {
+//            System.out.println(iterator.next());
+//        } - realizacija to chto vnizy
+        for (Integer value : list) {
+            System.out.println(value);
         }
 
         for (Integer integer: list) {

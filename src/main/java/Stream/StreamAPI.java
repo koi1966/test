@@ -8,6 +8,8 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
+//  https://www.youtube.com/watch?v=4PWfSmgiHKs
+
 public class StreamAPI {
     private static Object list2;
 
